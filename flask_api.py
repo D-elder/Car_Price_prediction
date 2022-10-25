@@ -14,14 +14,14 @@ import pandas as pd
 import pandas as pd
 import numpy as np
 
-pickle_in = open("CarSelling.pickle","rb")
+pickle_in = open("model_pipeline.pkl","rb")
 model=pickle.load(pickle_in)
 
 @app.route('/')
 def welcome():
     return "Welcome All"
 
-@app.route('/predict',methods=["Get"])
+
 
 def predict(model, input_df):
   predictions_df = model.predict(estimator= model, data=input_df)
