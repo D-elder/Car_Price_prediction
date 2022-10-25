@@ -25,7 +25,7 @@ def predict(model, input_df):
   predictions = predictions_df['Label'][0]
   return predictions
 
-def run():
+def main():
 
    from PIL import Image
    img = Image.open("octave.PNG")
