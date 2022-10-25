@@ -17,12 +17,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-pickle_in = open("CarSelling.pickle","rb")
+pickle_in = open("model_pipeline.pkl","rb")
 model=pickle.load(pickle_in)
 
 def predict(model, input_df):
   predictions_df = model.predict(estimator= model, data=input_df)
-  predictions = predictions_df['Label'][0]
+  predictions = predictions_df['label'][0]
   return predictions
 
 def main():
