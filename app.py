@@ -21,7 +21,7 @@ pickle_in = open("model_pipeline.pkl","rb")
 model=pickle.load(pickle_in)
 
 def predict(model, input_df):
-  predictions_df = model.predict(estimator= model, data=input_df)
+  predictions_df = model.predict(data=input_df)
   predictions = predictions_df['label'][0]
   return predictions
 
