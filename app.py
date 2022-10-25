@@ -26,10 +26,9 @@ def predict(model, input_df):
   return predictions
 
 def main():
-
    from PIL import Image
    img = Image.open("octave.PNG")
-   img2 = Image.open("cars.jfif")
+  
    st.image(img,use_column_width=False)
    
 add_selectbox = st.sidebar.selectbox(
