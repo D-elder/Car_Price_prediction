@@ -82,7 +82,4 @@ if add_selectbox == 'Batch': #Batch Prediction
 
     
 if __name__=='__main__':
-    main()
-    
-    if __name__=='__main__':
     app.run(host='0.0.0.0',port=8000)
