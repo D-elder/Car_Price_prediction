@@ -12,10 +12,8 @@ import pickle
 import pandas as pd
 import streamlit as st
 
-from google.colab import drive
-drive.mount('/content/drive')
 
-pickle_in =open("drive/MyDrive/CarSelling.pickle","rb")
+pickle_in =open("CarSelling.pickle","rb")
 model = pickle.load(pickle_in)
 
 def predict(model, input_df):
